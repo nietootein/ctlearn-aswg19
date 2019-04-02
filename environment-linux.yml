@@ -1,4 +1,4 @@
-# conda env create -f environment-ctlearn-aswg19.yml
+# conda env create -f environment-linux.yml
 name: ctlearn-aswg19
 channels:
     - anaconda

@@ -1,3 +1,8 @@
+if [ "$#" -ne 1 ]; then
+    echo "Choose your OS: {linux|macos}"
+    echo " e.g. $> bash autosetup.sh linux"
+fi
+
 mydir=`pwd`
 dl1dh_ver="master"
 ctlearn_ver="tf-cv-upgrade"
@@ -6,7 +11,14 @@ data_web="http://sagan.gae.ucm.es/~nieto/tmp2/ctlearn-aswg19/"
 
 #Create and activate conda environment
 
-conda env create -f environment.yml
+if [[ $1 == "linux" ]]; then
+    conda env create -f environment-linux.yml
+elif [[ $1 == "macos" ]]; then
+    conda env create -f environment-macos.yml
+else
+    echo "Supported OS: linux, macos"
+    exit
+fi
 source activate ctlearn-aswg19
 
 mkdir -p $mydir"/code"
