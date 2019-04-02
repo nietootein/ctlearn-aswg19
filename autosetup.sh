@@ -58,7 +58,9 @@ cd $mydir
 
 #Check versions
 echo " "
-echo "Checking installed versions"
-echo "dl1-data-handler: "`conda list|grep 'dl1-data-handler'`
+echo "Checking installed version(s)"
+if [[ $1 == "linux" ]]; then
+    echo "dl1-data-handler: "`conda list|grep 'dl1-data-handler'`
+fi
 echo "ctlearn: "`conda list|grep 'ctlearn'`
 echo "Done"
