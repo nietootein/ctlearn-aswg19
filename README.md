@@ -2,7 +2,7 @@
 
 This repository contains some tools that intend to automate the installation of [CTLearn](https://github.com/ctlearn-project/ctlearn) on your system and the retrieval of some data sets for [CTLearn](https://github.com/ctlearn-project/ctlearn) demonstration purposes. Both linux and macOS are supported. If installing on a linux machine, [Dl1-data-handler](https://github.com/cta-observatory/dl1-data-handler) will also be installed and additional data sets will be retrieved for [Dl1-data-handler](https://github.com/cta-observatory/dl1-data-handler) demostration purposes. 
 
-These tools assume a **working anaconda3 installation** on the target machine. 
+These tools assume a **working [anaconda3](https://www.anaconda.com/distribution/) installation** on the target machine. 
 
 **Note:** The linux installation, including the example data sets, takes ~3GB of disk space. The macos installation, including the example data sets, takes ~2GB of disk space.
 
