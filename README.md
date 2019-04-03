@@ -32,7 +32,11 @@ For macOS:
 $ bash autosetup.sh macos
 ```
 
+## Authorship
+
+[CTLearn](https://github.com/ctlearn-project/ctlearn) and [Dl1-data-handler](https://github.com/cta-observatory/dl1-data-handler) core developers.
+
 ## Contact
 
-In case of trouble with the installation please contact Daniel Nieto (d.nieto at ucm dot es).
+In case of trouble with the installation please contact Daniel Nieto (d.nieto at ucm dot es) or open an issue [here](https://github.com/nietootein/ctlearn-aswg19/issues).
 
