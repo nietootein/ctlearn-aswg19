@@ -17,6 +17,7 @@ dependencies:
     - pip:
         - https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.12.0-cp36-cp36m-linux_x86_64.whl
     - pytables
+    - vitables
     - pyyaml
     - scikit-learn
     - scipy
