@@ -4,8 +4,8 @@ if [ "$#" -ne 1 ]; then
 fi
 
 mydir=`pwd`
-dl1dh_ver="master"
-ctlearn_ver="tf-cv-upgrade"
+dl1dh_ver="v0.7.2"
+ctlearn_ver="v0.3.0"
 data_web="http://sagan.gae.ucm.es/~nieto/tmp2/ctlearn-aswg19/"
 
 #Create and activate conda environment
@@ -47,7 +47,7 @@ git pull
 git checkout $ctlearn_ver
 pip install --upgrade .
 
-#Donwload sample data
+#Download sample data
 mkdir -p $mydir/data
 cd $mydir/data/
 if [ ! -e $mydir/data/$data_file ]; then 
@@ -55,6 +55,9 @@ if [ ! -e $mydir/data/$data_file ]; then
 fi
 tar -xvzf $mydir/data/$data_file
 cd $mydir
+
+#Generate ctlearn files list 
+ls $mydir/data/ctlearn/*h5 > $mydir/data/ctlearn/ctlearn_input.txt
 
 #Check versions
 echo " "
