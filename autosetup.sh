@@ -22,6 +22,8 @@ else
 fi
 source activate ctlearn-aswg19
 
+#Create some useful folders
+mkdir -p $mydir"/logs"
 mkdir -p $mydir"/code"
 cd $mydir"/code"
 
